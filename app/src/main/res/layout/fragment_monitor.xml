@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/color_gray"
+              tools:context="com.huhuo.monitor.ui.fragment.TaskTestFragment">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:text="@string/monitor_online"
+        style="@style/FragmentTitleStyle"
+        />
+    <TextView
+        android:id="@+id/tv_net_status"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color_send_green_bg_normal"
+        android:gravity="center"
+        android:layout_below="@id/tv_title"
+        android:text="@string/tips_server_connection_ok"
+        android:elevation="5dp"
+        />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_net_status"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:fadingEdge="none"
+                />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/pb_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:indeterminate="true"
+            android:visibility="gone"
+            style="@style/Widget.MaterialProgressBar.ProgressBar" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:text="正在获取离线上位机..."
+            android:layout_toRightOf="@id/pb_loading"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.huhuo.monitor.ui.activity.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/guide_higth"
+        android:background="@color/color_white" >
+
+        <RelativeLayout
+            android:id="@+id/layout_online"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="@dimen/tab_drawable_padding"
+                android:drawableTop="@drawable/selector_online_tab"
+                android:text="@string/monitor_online"
+                android:textColor="#82858b" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_fault"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_fault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="@dimen/tab_drawable_padding"
+                android:drawableTop="@drawable/selector_fault_tab"
+                android:text="@string/monitor_fault"
+                android:textColor="#82858b" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_alarm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="@dimen/tab_drawable_padding"
+                android:drawableTop="@drawable/selector_alarm_tab"
+                android:text="@string/monitor_alarm"
+                android:textColor="#82858b" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_offline"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_offline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="@dimen/tab_drawable_padding"
+                android:drawableTop="@drawable/selector_offline_tab"
+                android:text="@string/monitor_offline"
+                android:textColor="#82858b" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">火警监视</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- fragment title -->
+    <string name="hezu_message">消息</string>
+    <string name="hezu_myself">我的</string>
+    <string name="hezu_login">登录</string>
+
+    <string name="guide_regist">立即注册</string>
+    <string name="regist">注册</string>
+    <string name="guide_login">登录</string>
+    <string name="guide_seesee">随便看看</string>
+    <string name="input_phone">请输入手机号</string>
+    <string name="input_code">请输入验证码</string>
+    <string name="get_regcode">重新获取</string>
+    <string name="set_password">请设置密码</string>
+    <string name="regist_now">立即申请</string>
+    <string name="regist_des">或免注册使用其他帐号登录</string>
+    <string name="hezu_help_pay">代付</string>
+    <string name="title_activity_single_conversation">SingleConversationActivity</string>
+
+
+    <string name="image_desc">No Desc</string>
+
+
+    <!-- 公共-->
+    <string name="common_no_sdcard">无存储卡,请插入存储卡后再试</string>
+    <string name="common_today">今天</string>
+    <string name="common_yesterday">昨天</string>
+    <string name="common_tomorrow">明天</string>
+    <string name="common_before_yesterday">前天</string>
+    <string name="common_before_yesterday_2">昨天之前</string>
+    <string name="common_after_tomorrow">后天</string>
+    <string name="common_copy">复制</string>
+    <string name="common_paste">粘贴</string>
+    <string name="common_delete">删除</string>
+    <string name="common_unknown">未知</string>
+    <string name="common_not">无</string>
+    <string name="common_china_mobile">中国移动</string>
+    <string name="common_china_unicom">中国联通</string>
+    <string name="common_china_telecom">中国电信</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_prompt">提示</string>
+    <string name="common_ok">确定</string>
+    <string name="common_delay_ms">%1$s ms</string>
+    <string name="common_deatils_null">暂无详情</string>
+    <string name="common_name_null">暂无别名</string>
+
+
+    <string name="renew_request_verification_code">%1$s秒后重试</string>
+    <string name="renew_request_verification_code_2">重新获取验证码</string>
+
+    <!-- 无网络情况 -->
+    <string name="test_net_setting">未发现手机网络。前往设置？</string>
+    <string name="test_cant_conn_net">无法连接网络</string>
+    <string name="test_setting_net_title">设置网络</string>
+
+    <!-- 提示-->
+    <string name="tips_connect_success_online_wait">与服务器连接成功，等待接收在线数据</string>
+    <string name="tips_connect_success_fault_wait">与服务器连接成功，等待接收故障数据</string>
+    <string name="tips_connect_success_alarm_wait">与服务器连接成功，等待接收警报数据</string>
+    <string name="tips_connect_success_offline_wait">与服务器连接成功，等待接离线报数据</string>
+    <string name="tips_connect_close_try_again">与服务器的连接被关闭，请检查网络并重启APP</string>
+    <string name="tips_connect_error_try_again">与服务器的连接出现错误，请检查网络并重启APP</string>
+    <string name="tips_exit">确定退出吗？</string>
+    <string name="tips_server_connection_ok">网络状态正常 最后通信时间：%1$s</string>
+    <string name="tips_server_connection_error">网络连接失败，请下拉刷新重新连接 \n最后通信时间：%1$s</string>
+
+    <!-- 状态-->
+    <string name="monitor_online">在线</string>
+    <string name="monitor_offline">离线</string>
+    <string name="monitor_fault">故障</string>
+    <string name="monitor_alarm">报警</string>
+    <string name="monitor_unknow">未知</string>
+
+    <string name="monitor_online_args">在线(%1$s)</string>
+    <string name="monitor_offline_args">离线(%1$s)</string>
+    <string name="monitor_fault_args">故障(%1$s)</string>
+    <string name="monitor_alarm_args">报警(%1$s)</string>
+    <string name="monitor_unknow_args">未知(%1$s)</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_mobiel_phone">手机号</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="prompt_verify_code">验证码</string>
+    <string name="prompt_verify_code_sended">验证码已发送</string>
+    <string name="prompt_verify_code_too_much">获取验证码次数过多</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_mobile_phone">无效的手机号码</string>
+    <string name="error_invalid_password">验证码太短</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_mobiel_phone_required">手机号必须输入</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="title_activity_launch">LaunchActivity</string>
+    <string name="dummy_button">火警监视</string>
+    <string name="dummy_content">火警监视</string>
+
+</resources>
