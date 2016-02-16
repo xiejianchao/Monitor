@@ -100,7 +100,6 @@ public abstract class BaseMonitorFragment extends BaseFragment implements SwipeR
     };
 
     protected void updateTips(int title) {
-        Logger.d(TAG,"item count:" + adapter.getData().size());
 //        if (adapter.getData().size() > 0) {
 //            showTipsLayout(false);
 //        } else {
@@ -111,7 +110,6 @@ public abstract class BaseMonitorFragment extends BaseFragment implements SwipeR
         }
     }
     protected void updateTips(String title) {
-        Logger.d(TAG,"item count:" + adapter.getData().size());
 //        if (adapter.getData().size() > 0) {
 //            showTipsLayout(false);
 //        } else {
