@@ -10,6 +10,7 @@ import android.text.TextUtils;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.huhuo.monitor.MonitorApplication;
 import com.huhuo.monitor.R;
 import com.huhuo.monitor.constants.Constants;
 import com.huhuo.monitor.net.HttpHelper;
@@ -123,6 +124,7 @@ public class LaunchActivity extends AppCompatActivity {
         // while interacting with the UI.
         findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
 
+        MonitorApplication.getInstance().addTempActivity(this);
         start = System.currentTimeMillis();
         final String mobile = SPUtil.getMobile();
         if (!TextUtils.isEmpty(mobile)) {

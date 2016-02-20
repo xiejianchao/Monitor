@@ -22,6 +22,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.huhuo.monitor.MonitorApplication;
 import com.huhuo.monitor.R;
 import com.huhuo.monitor.constants.Constants;
 import com.huhuo.monitor.net.HttpHelper;
@@ -69,6 +70,7 @@ public class LoginActivity extends BaseActivity{
 
     @Override
     protected void init(Bundle savedInstanceState) {
+        MonitorApplication.getInstance().addTempActivity(this);
         initSMSSDK();
         // Set up the login form.
         mMobilePhoneView = (AutoCompleteTextView) findViewById(R.id.email);

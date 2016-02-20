@@ -61,8 +61,8 @@
     <string name="tips_connect_success_fault_wait">与服务器连接成功，等待接收故障数据</string>
     <string name="tips_connect_success_alarm_wait">与服务器连接成功，等待接收警报数据</string>
     <string name="tips_connect_success_offline_wait">与服务器连接成功，等待接离线报数据</string>
-    <string name="tips_connect_close_try_again">与服务器的连接被关闭，请检查网络并重启APP</string>
-    <string name="tips_connect_error_try_again">与服务器的连接出现错误，请检查网络并重启APP</string>
+    <string name="tips_connect_close_try_again">与服务器的连接被关闭，请检查网络并重新连接</string>
+    <string name="tips_connect_error_try_again">与服务器的连接出现错误，请检查网络并重新连接</string>
     <string name="tips_exit">确定退出吗？</string>
     <string name="tips_server_connection_ok">网络状态正常 最后通信时间：%1$s</string>
     <string name="tips_server_connection_error">网络连接失败，请下拉刷新重新连接 \n最后通信时间：%1$s</string>

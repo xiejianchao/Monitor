@@ -9,6 +9,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
 
+import com.huhuo.monitor.MonitorApplication;
 import com.huhuo.monitor.R;
 import com.huhuo.monitor.constants.Constants;
 import com.huhuo.monitor.model.CommonDataModel;
@@ -76,6 +77,7 @@ public class MainActivity extends BaseActivity implements WebSocketClient.OnRece
 
     @Override
     protected void init(Bundle savedInstanceState) {
+        MonitorApplication.getInstance().removeTempActivity();
         fragmentManager = getSupportFragmentManager();
 //        updateTitleText(R.string.app_name);
         // 默认选中首屏
@@ -712,7 +714,13 @@ public class MainActivity extends BaseActivity implements WebSocketClient.OnRece
                     new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
+                            try {
+                                webSocketClient.close();
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
                             finish();
+                            System.exit(0);
                         }
                     },
                     R.string.common_cancel,

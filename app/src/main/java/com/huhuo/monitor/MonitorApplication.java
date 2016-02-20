@@ -1,5 +1,6 @@
 package com.huhuo.monitor;
 
+import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 
@@ -16,6 +17,8 @@ import com.nostra13.universalimageloader.utils.StorageUtils;
 import org.xutils.x;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by xiejc on 15/12/11.
@@ -43,7 +46,7 @@ public class MonitorApplication extends Application{
 
 //        initDatabaseHelper();
 
-        initImageLoader(getApplicationContext());
+//        initImageLoader(getApplicationContext());
     }
 
     //测试代码，初始化数据库，根据当前登录用户的id创建db，随时删除
@@ -52,6 +55,22 @@ public class MonitorApplication extends Application{
             DatabaseHelper.init(this, Constants.DEFAULT_USER_ID);
             Logger.d(TAG, "初始化数据库");
 
+        }
+    }
+
+    private List<Activity> list = new ArrayList<Activity>();
+
+    public void addTempActivity(Activity ac){
+        list.add(ac);
+    }
+
+    public void removeTempActivity(){
+        if (list.size() > 0) {
+            for (Activity ac : list) {
+                if (ac != null) {
+                    ac.finish();
+                }
+            }
         }
     }
 
@@ -69,7 +88,7 @@ public class MonitorApplication extends Application{
         //  ImageLoaderConfiguration.createDefault(this);
         // method.
         //缓存文件的目录
-        File cacheDir = StorageUtils.getOwnCacheDirectory(context, "universalimageloader/Cache");
+        File cacheDir = StorageUtils.getOwnCacheDirectory(context, "Monitor/Cache");
         ImageLoaderConfiguration.Builder config = new ImageLoaderConfiguration.Builder(context);
         config.threadPriority(Thread.NORM_PRIORITY - 2);
         config.denyCacheImageMultipleSizesInMemory();
